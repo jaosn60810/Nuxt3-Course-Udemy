@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Gender, Popularity, Length, names } from "@/data";
+import { Gender, Popularity, Length, names } from '@/data';
 
 interface OptionsState {
   gender: Gender;
@@ -35,18 +35,18 @@ const removeName = (index: number) => {
 
 const optionsArray = [
   {
-    title: "1) Choose a gender",
-    category: "gender",
+    title: '1) Choose a gender',
+    category: 'gender',
     buttons: [Gender.GIRL, Gender.UNISEX, Gender.BOY],
   },
   {
     title: "2) Choose the name's popularity",
-    category: "popularity",
+    category: 'popularity',
     buttons: [Popularity.TRENDY, Popularity.UNIQUE],
   },
   {
     title: "3) Choose name's length",
-    category: "length",
+    category: 'length',
     buttons: [Length.SHORT, Length.ALL, Length.LONG],
   },
 ];
@@ -115,4 +115,5 @@ h1 {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
+/* 12/20 */
 </style>
