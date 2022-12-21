@@ -23,4 +23,5 @@
 img {
   width: 10rem;
 }
+/* 12 */
 </style>
