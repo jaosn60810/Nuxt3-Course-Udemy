@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import restaurants from "@/data.json";
-
+import restaurants from '@/data.json';
+// s14
 const route = useRoute();
 const name = route.params.name;
 
 const restaurant = restaurants.find((r) => r.name === name);
 
 useMeta({
-  title: restaurant ? name : "404 - Restaurant Not Found",
+  title: restaurant ? name : '404 - Restaurant Not Found',
   meta: [
     {
-      name: "viewport",
-      content: "width=device-width",
+      name: 'viewport',
+      content: 'width=device-width',
     },
   ],
 });
