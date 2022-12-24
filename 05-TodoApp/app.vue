@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const input = ref("");
+const input = ref('');
 const { todos, addTodo, updateTodo, deleteTodo } = useTodos();
 
 const handleClick = () => {
   addTodo(input.value);
-  input.value = "";
+  input.value = '';
 };
+// s18
 </script>
 
 <template>
